@@ -1,0 +1,144 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+strong{
+	font-weight: 600;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap-animate{
+	max-width: 340px;
+	margin: 150px auto;
+	background: #0b0b80;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.tittle-animate{
+	color: #fff;
+	font-family: 'Quicksand', sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 15px 0 0 15px;
+}
+
+.description-animate,.configurations-animate{
+	background: #fff;
+	color: #000;
+	font-family: 'Times New Roman',arial, sans-serif;
+	text-align: center;
+	font-size: 39px;
+	width: 210px;
+	margin: 20px auto 45px auto;
+	padding: 4px;
+	box-sizing: border-box;
+	overflow: hidden;
+	word-break: break-word;
+}
+.configurations-animate{
+	width: 100%;
+	display: none;
+}
+#start-animate,#configurations-btn{
+	border: none;
+	background: #0b0b84;
+	color: #fff;
+	font-size: 17px;
+	border-radius: 8px;
+	margin-bottom: 6px;
+	padding: 5px 15px;
+	cursor: pointer;
+	transition: all .5s ease;
+}
+
+#start-animate:hover{
+	background: #283892;
+}
+
+.car-section{
+	background: url(../img/bg.jpg);
+	margin-top: 15px;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding: 30px 0 20px 0;
+	display: none;
+}
+
+.car-section img{
+	width: 100%;
+}
+
+
+.buttons{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 15px;
+}
+
+.buttons button{
+	margin: 0 1px;
+	background: #fff;
+	border: 1px solid #eee;
+	padding: 10px 0;
+	cursor: pointer;
+
+}
+
+.step1,.step2,.step3{
+	position: relative;
+}
+.check1,.check2,.check3{
+	display: none;
+	position: absolute;
+	top: -8px;
+	right: -2px;
+}
+
+.car2,.car3,.car4{
+	display: none
+}
+
+@media only screen and (max-width: 420px){
+	.wrap-animate{
+		margin: 150px 20px;
+	}
+}
